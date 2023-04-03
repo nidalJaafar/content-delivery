@@ -1,0 +1,10 @@
+version: '3'
+services:
+  postgres-service:
+    image: postgres
+    container_name: content-delivery
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: content_delivery
+      POSTGRES_PASSWORD: root
